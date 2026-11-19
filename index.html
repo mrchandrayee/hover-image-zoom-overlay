@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#aeb9d0">
+  <title>Hover Image Zoom with Overlay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <div class="tag">HTML / CSS</div>
+    <header>
+      <h1><span class="accent">|</span> Hover Image Zoom</h1>
+      <p>with Overlay</p>
+    </header>
+
+    <section class="demo-area">
+      <div class="zoom-overlay" tabindex="0" role="button" aria-label="Show image details">
+        <img src="assets/1.jpg" alt="City skyline with tall buildings">
+        <div class="overlay">
+          <h2>Image Title</h2>
+          <h3>Description goes here</h3>
+        </div>
+      </div>
+    </section>
+
+    <p class="channel">Full video on youtube <strong>@mzcode01</strong></p>
+
+    <section class="code-window">
+      <div class="window-head"><i></i><i></i><i></i><b>HTML</b></div>
+      <pre><code>&lt;div class="zoom-overlay"&gt;
+  &lt;img src="1.jpg" alt="Sample" /&gt;
+  &lt;div class="overlay"&gt;
+    &lt;h1&gt;Image Title&lt;/h1&gt;
+    &lt;h3&gt;Description goes here&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </section>
+
+    <section class="code-window css-window">
+      <div class="window-head"><i></i><i></i><i></i><b>CSS</b></div>
+      <pre><code>.zoom-overlay {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  overflow: hidden;
+  cursor: pointer;
+}</code></pre>
+    </section>
+
+    <div class="social-icons" aria-label="Social actions">
+      <span aria-label="Like">♡</span><span aria-label="Comment">○</span>
+      <span aria-label="Share">➤</span><span aria-label="Save">▢</span>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
